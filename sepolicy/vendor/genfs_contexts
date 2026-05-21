@@ -53,6 +53,7 @@ genfscon sysfs /devices/platform/odm/odm:pid_chg/wakeup u:object_r:sysfs_wakeup:
 genfscon sysfs /devices/platform/soc/11010000.spi1/spi_master/spi1/spi1.0/input/input5/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11010000.spi1/spi_master/spi1/spi1.0/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11015000.i2c/i2c-3/3-002b/wakeup u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/11015000.i2c/i2c-3/3-0060/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11017000.i2c/i2c-5/5-006b/power_supply/charger/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11eb2000.i2c/i2c-8/8-004e/wakeup u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/11f00000.i2c/i2c-7/7-005f/wakeup u:object_r:sysfs_wakeup:s0
