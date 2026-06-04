@@ -199,7 +199,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery \
-    charger_res_images_vendor
+    charger_res_images_vendor \
+    x6882-health-service-lib
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -459,6 +460,9 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek \
     android.hardware.usb.gadget-service.mediatek
 
+# ViPER4Android
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+    
 # Vendor service manager
 PRODUCT_PACKAGES += \
     vndservicemanager
@@ -497,6 +501,17 @@ PRODUCT_PACKAGES += \
     hostapd \
     libkeystore-wifi-hidl:64 \
     libkeystore-engine-wifi-hidl:64
+
+# ZxA
+PERF_GOV_SUPPORTED := false
+PERF_DEFAULT_GOV := schedutil
+BYPASS_CHARGE_SUPPORTED := true
+BYPASS_CHARGE_TOGGLE_PATH := /sys/devices/platform/charger/bypass_charger
+TARGET_DISABLES_LIBPERF := false
+
+# Health Service Wrapper
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/HealthService/x6882-health-service.sh:$(TARGET_COPY_OUT_VENDOR)/bin/x6882-health-service
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/infinix/X6882/X6882-vendor.mk)

@@ -32,3 +32,18 @@ BUILD_FINGERPRINT := Infinix/X6882-OP/Infinix-X6882:14/UP1A.231005.007/251121V16
 # Time
 LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
 
+# Axion Flags
+AXION_MAINTAINER := ZaidanPrjkt
+TARGET_ENABLE_BLUR := true
+TARGET_SUPPORTED_REFRESH_RATES := 60,90,120
+TARGET_INCLUDE_AXFX := false
+
+# Camera information (multiple sensors supported)
+AXION_CAMERA_REAR_INFO := 50
+AXION_CAMERA_FRONT_INFO := 8
+
+# Processor name (underscores become spaces)
+AXION_PROCESSOR := Mediatek_Helio_G100
+
+# Keys
+-include vendor/lineage-priv/keys/keys.mk
