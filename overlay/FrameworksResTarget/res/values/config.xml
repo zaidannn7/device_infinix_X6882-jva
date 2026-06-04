@@ -608,4 +608,10 @@
     <string name="config_gpu_temp_path">dynamic</string>
     <string name="config_ram_temp_path">dynamic</string>
     <string name="config_cpu_temp_path">dynamic</string>
+
+    <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
+    <integer name="config_screenRecorderMaxFramerate">120</integer>
+
+    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
+    <bool name="config_zramWriteback">true</bool>
 </resources>
