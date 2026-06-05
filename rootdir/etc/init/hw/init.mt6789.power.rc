@@ -1,4 +1,7 @@
 on init
+    # Kill Battery first_usage_date
+    chmod 000 /sys/class/power_supply/battery/first_usage_date
+
     # Setup final cpuset
     write /dev/cpuset/foreground/cpus 0-6
     write /dev/cpuset/foreground_window/cpus 0-6
