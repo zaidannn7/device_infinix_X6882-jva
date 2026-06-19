@@ -900,9 +900,6 @@ on property:sys.boot_completed=1
     write /sys/block/sdc/queue/scheduler "mq-deadline"
     swapon_all vendor/etc/fstab.mt6789
     restart android-hardware-media-c2-hal-1-2
-    
-    # Back to default VM settings
-    write /proc/sys/vm/dirty_expire_centisecs 3000
 
 # OTG
 on property:sys.boot_completed=1
