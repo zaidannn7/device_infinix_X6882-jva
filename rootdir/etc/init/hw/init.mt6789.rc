@@ -897,6 +897,7 @@ on property:persist.vendor.mediatek.fast_charging.support=*
     write /sys/devices/platform/charger/fast_chg_indicator ${persist.vendor.mediatek.fast_charging.support}
 
 on property:sys.boot_completed=1
+    write /sys/block/sdc/queue/scheduler "mq-deadline"
     swapon_all vendor/etc/fstab.mt6789
     restart android-hardware-media-c2-hal-1-2
     
