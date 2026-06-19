@@ -244,7 +244,7 @@
     {
       "PowerHint": "INTERACTION",
       "Node": "GpuPwrLevel",
-      "Duration": 1500,
+      "Duration": 0,
       "Value": "0"
     },
     {
@@ -268,7 +268,7 @@
     {
       "PowerHint": "LAUNCH",
       "Node": "GpuPwrLevel",
-      "Duration": 1500,
+      "Duration": 0,
       "Value": "0"
     },
     {
