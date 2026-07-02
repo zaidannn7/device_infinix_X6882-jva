@@ -419,6 +419,9 @@ ro.vendor.mtk_thermal_2_0=1
 vendor.thermal.link_config=1
 vendor.thermal.config.path=/vendor/etc/thermal_info_config.json
 
+# USB
+vendor.usb.controller=musb-hdrc
+
 # Wifi
 persist.vendor.mtk_wfc_support=1
 ro.vendor.mtk_tb_wifi_3g_mode=0
