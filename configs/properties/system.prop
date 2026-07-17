@@ -24,6 +24,10 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Infinity Flags
+ro.product.marketname=Infinix Hot 50 4G
+ro.infinity.soc=Mediatek Helio G100
+ro.infinity.camera=50MP + 8MP
 # Logging
 log.tag=I
 
