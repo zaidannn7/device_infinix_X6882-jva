@@ -103,7 +103,7 @@ on init
     # Top app tasks
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
     write /dev/cpuctl/top-app/cpu.uclamp.max max
-    write /dev/cpuctl/top-app/cpu.uclamp.min 410
+    write /dev/cpuctl/top-app/cpu.uclamp.min 128
     write /dev/cpuctl/top-app/cpu.shares 20480
 
 on property:sys.boot_completed=1
@@ -184,7 +184,7 @@ on property:sys.boot_completed=1
     # Top app tasks
     write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
     write /dev/cpuctl/top-app/cpu.uclamp.max max
-    write /dev/cpuctl/top-app/cpu.uclamp.min 410
+    write /dev/cpuctl/top-app/cpu.uclamp.min 128
     write /dev/cpuctl/top-app/cpu.shares 20480
 
     # DVFS
