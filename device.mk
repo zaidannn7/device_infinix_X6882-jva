@@ -218,6 +218,7 @@ PRODUCT_PACKAGES += \
 
 # Init files
 PRODUCT_PACKAGES += \
+    fstab.enableswap \
     fstab.mt6789 \
     fstab.mt6789.vendor_ramdisk \
     init_connectivity.rc \

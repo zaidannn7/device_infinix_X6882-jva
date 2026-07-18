@@ -5,6 +5,12 @@
 //
 
 prebuilt_etc {
+    name: "fstab.enableswap",
+    src: "etc/fstab.enableswap",
+    vendor: true
+}
+
+prebuilt_etc {
     name: "init_connectivity.rc",
     src: "etc/init/hw/init_connectivity.rc",
     sub_dir: "init/hw",
