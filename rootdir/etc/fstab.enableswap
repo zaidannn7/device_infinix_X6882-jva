@@ -1,1 +1,1 @@
-/dev/block/zram0 none swap defaults zramsize=70%
+/dev/block/zram0 none swap defaults zramsize=50%
